@@ -1,0 +1,384 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  float: left;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+nav{
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 1% 0 0 0;
+}
+ul{
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+li{
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: Gideon Roman, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.logo{
+  width: 8%;
+  margin: 0 5% 0 5%;
+}
+img{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+li a{
+  text-decoration: none;
+  color: black;
+}
+.nava{
+  padding-top: 1%;
+  margin: 0 0 0 4%;
+}
+.button{
+  margin: 0 0 0 8%;
+}
+.search{
+  margin: 0 0 0 2%;
+}
+
+.headline{
+  background-image: url(../pinkhair.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.headline>h1{
+  padding: 20% 0 1% 0;
+  margin: 0 0 0 10%;
+  font-family: Gideon Roman, Arial, Helvetica, sans-serif;
+  font-size: 90px;
+  font-weight: 400;
+  max-width: 19ch;
+  color: whitesmoke;
+}
+.headline>h3{
+  padding: 0 0 2% 0;
+  margin: 0 0 0 10%;
+  font-family: Gideon Roman, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: whitesmoke;
+}
+.headline>p a{
+  text-decoration: none;
+  font-family: Gideon Roman, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: whitesmoke;
+  background-color: black;
+  border: 5px solid black;
+  padding: 1%;
+  margin: 0 0 0 10%;
+}
+.container{
+  width: 100%;
+  float: left;
+  padding: 7% 0 0 10%;
+}
+.visit{
+  float: left;
+  width: 27%;
+  margin: 0;
+  font-family: Gideon Roman, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: whitesmoke;
+  background-color: black;
+  border: 5px solid black;
+  padding: 3% 2% 4% 2%;
+}
+.first{
+  font-size: 18px;
+  border-left: 3px solid whitesmoke;
+  line-height: 50px;
+  padding-left: 30px;
+}
+.first+h2{
+  font-family: Gideon Roman, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  max-width: 25ch;
+  line-height: 200%;
+  margin-bottom: 10%;
+}
+.first+h2+p a{
+  color: black;
+  background-color: whitesmoke;
+  border: 3px solid whitesmoke;
+  padding: 5%;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.arrow{
+  float: left;
+  width: 73%;
+  margin: 0;
+  padding: 20% 0 0 50%;
+}
+.arrow a{
+  color: rgb(231, 233, 235);
+  font-size: 30px;
+  padding: 3% 4% 3% 4%;
+  margin: 0 2% 0 0;
+  background-color: rgb(247, 247, 248);
+  border: 3px solid rgb(231, 233, 235);
+  border-radius: 100%;
+
+}
+.containertwo{
+  width: 100%;
+  float: left;
+  padding: 7% 0 7% 7%;
+ 
+}
+.containertwo>section{
+  width: 30%;
+  float: left;
+  text-align: center;
+}
+.beauty{
+  width: 25%;
+}
+.containertwo>section>h3{
+  font-family: Gideon Roman, Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+}
+.containertwo>section>p{
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 180%;
+  max-width: 33ch;
+  margin-left: 7%;
+  color: black;
+}
+
+.containerthree{
+  width: 100%;
+  float: left;
+  background-color: rgb(231, 233, 235);
+}
+.containerthree>section{
+  width: 50%;
+  float: left;
+  margin: 0 0 7% 0;
+}
+.containerthree>section>h1{
+  font-family: Gideon Roman, Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  max-width: 22ch;
+  line-height: 150%;
+  font-weight: 600;
+  color: black;
+  padding: 0 0 2% 19%;
+  margin: 10% 0 0 0;
+}
+.paragraph{
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 180%;
+  color: black;
+  padding: 0 0 0 19%;
+  margin: 2% 0 7% 0;
+}
+.paragraph+p a{
+  text-decoration: none;
+  font-family: Gideon Roman, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: whitesmoke;
+  background-color: black;
+  border: 5px solid black;
+  padding: 2%;
+  margin-left: 19%;
+}
+.video{
+  padding: 28% 0 0 2%;
+  width: 80%;
+}
+
+.containerfour{
+  float: left;
+  width: 100%;
+  padding-left: 15%;
+}
+.articles{
+  float: left;
+  width: 25%;
+  margin: 10% 0 10% 2%;
+  
+}
+.articleone{
+  background-image: url(../img7.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+article{
+  margin-top: 100%;
+}
+article>h4{
+  width: 80%;
+  margin: 0 0 0 10%;
+  padding: 5% 0 0 0;
+  color: whitesmoke;
+  background-color: black;
+  text-align: center;
+  font-family: Gideon Roman, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: whitesmoke;
+}
+article>h5{
+  width: 80%;
+  margin: 0 0 0 10%;
+  padding: 1% 0 5% 0;
+  color: whitesmoke;
+  background-color: black;
+  text-align: center;
+  font-family: Gideon Roman, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: whitesmoke;
+}
+.articletwo{
+  background-image: url(../img8.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.articlethree{
+  background-image: url(../img9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.colour{
+  float: left;
+  width: 100%;
+  background-image: url(../img10.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.colour>h2{
+  margin: 10% 0 2% 10%;
+  font-family: Gideon Roman, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+.colour>h1{
+  margin: 0 0 4% 10%;
+  font-family: Gideon Roman, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+  max-width: 15ch;
+}
+.colour>p a{
+  text-decoration: none;
+  font-family: Gideon Roman, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: whitesmoke;
+  background-color: black;
+  border: 5px solid black;
+  padding: 1%;
+  margin: 0 0 0 10%;
+}
+.colour>p{
+  margin-bottom: 10%;
+}
+
+.containerfive{
+  float: left;
+  width: 100%;
+  padding: 7% 0;
+}
+.containerfive>h1{
+  font-family: Gideon Roman, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.containerfive>span{
+  font-family: Gideon Roman, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+  margin: 0 0 5% 49%;
+  padding-top: 0;
+}
+.lbimg{
+  float: left;
+  width: 100%;
+  padding: 3% 0 3% 17%;
+}
+.lbimg>section{
+  float: left;
+  width: 25%;
+  margin: 1%;
+}
+
+.lookbook{
+  width: 100%;
+  margin: 2%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
